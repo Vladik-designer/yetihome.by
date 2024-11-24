@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YETI HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Шторка сверху -->
+    <header id="header">
+        <div id="logo">
+            <img src="images1.png" alt="YETI HOME Logo">
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#booking">Бронирование</a></li>
+                <li><a href="#description">Описание дома</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#faq">Вопросы и ответы</a></li>
+                <li><a href="#map">Карта</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <div id="content">
+        <!-- Главная -->
+        <section id="home" class="page">
+            <div class="background">
+                <h1>Добро пожаловать в YETI HOME</h1>
+                <p>Аренда уютного дома для отдыха всей семьей или с друзьями.</p>
+            </div>
+        </section>
+
+        <!-- Бронирование -->
+        <section id="booking-page">
+            <h2>Бронирование</h2>
+            <div class="booking-container">
+              <!-- Левая часть: Форма бронирования -->
+              <div class="booking-form">
+                <h3>Забронируйте ваш отдых</h3>
+                <form id="booking-form">
+                  <label for="name">Имя:</label>
+                  <input type="text" id="name" name="name" required />
+          
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required />
+          
+                  <label for="guests">Количество гостей:</label>
+                  <select id="guests" name="guests" required>
+                    <option value="2">До 2 человек</option>
+                    <option value="4">До 4 человек</option>
+                    <option value="6">До 6 человек</option>
+                    <option value="8">До 8 человек</option>
+                  </select>
+          
+                  <label for="dates">Выберите даты:</label>
+                  <input type="date" id="start-date" name="start-date" required />
+                  <input type="date" id="end-date" name="end-date" required />
+          
+                  <label>
+                    <input type="checkbox" name="sauna" id="sauna" />
+                    Добавить сауну (+90 BYN)
+                  </label>
+          
+                  <button type="submit">Забронировать</button>
+                </form>
+              </div>
+
+              <div id="price">Стоимость: 0 BYN</div>
+          
+              <!-- Правая часть: Календарь -->
+              <div class="calendar-section">
+                <h3>Календарь доступности</h3>
+                <div class="calendar-row">
+                  <div class="calendar">
+                    <h4>Ноябрь 2024 г.</h4>
+                    <!-- Календарь для ноября -->
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+                        </tr>
+                        <tr>
+                          <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+                        </tr>
+                        <tr>
+                          <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td class="booked">19</td>
+                        </tr>
+                        <tr>
+                          <td class="booked">20</td><td>21</td><td>22</td><td>23</td><td>24</td><td class="booked">25</td><td>26</td>
+                        </tr>
+                        <tr>
+                          <td>27</td><td>28</td><td class="booked">29</td><td>30</td><td></td><td></td><td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="calendar">
+                    <h4>Декабрь 2024 г.</h4>
+                    <!-- Календарь для декабря -->
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td></td><td></td><td></td><td></td><td>1</td><td>2</td><td class="booked">3</td>
+                        </tr>
+                        <tr>
+                          <td>4</td><td>5</td><td class="booked">6</td><td>7</td><td>8</td><td class="booked">9</td><td>10</td>
+                        </tr>
+                        <tr>
+                          <td>11</td><td>12</td><td>13</td><td class="booked">14</td><td>15</td><td>16</td><td class="booked">17</td>
+                        </tr>
+                        <tr>
+                          <td>18</td><td>19</td><td>20</td><td class="booked">21</td><td>22</td><td class="booked">23</td><td>24</td>
+                        </tr>
+                        <tr>
+                          <td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <h3>Правила проживания</h3>
+                <ul>
+                    <li>Количество гостей должно соответствовать брони.</li>
+                    <li>Время заезда с 15:00, выезд до 12:00.</li>
+                    <li>Режим тишины с 22:00 до 8:00.</li>
+                    <li>Запрещено курить в доме, размещаться с питомцами, использовать пиротехнику.</li>
+                </ul>
+            </form>
+        </section>
+
+     <!-- Описание дома -->
+    <section id="description" class="page">
+        <h2>Описание дома</h2>
+        <div class="columns">
+            <div>
+                <h3>Дом для 8 человек</h3>
+                <div class="carousel">
+                    <img src="photo5.jpg" alt="Дом 1">
+                    <img src="photo6.jpg" alt="Дом 2">
+                </div>
+            </div>
+            <div>
+                <h3>Сауна с панорамным видом</h3>
+                <div class="carousel">
+                    <img src="photo6.jpg" alt="Сауна 1">
+                    <img src="photo5.jpg" alt="Сауна 2">
+                </div>
+            </div>
+            <div>
+                <h3>Горячий бассейн</h3>
+                <div class="carousel">
+                    <img src="photo8.jpg" alt="Бассейн 1">
+                    <img src="photo6.jpg" alt="Бассейн 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Отзывы -->
+        <section id="reviews" class="page">
+            <h2>Отзывы</h2>
+            <form id="review-form">
+                <textarea id="review-text" placeholder="Ваш отзыв"></textarea>
+                <input type="date" id="review-date">
+                <button type="submit">Отправить</button>
+            </form>
+            <div id="reviews-list">
+                <!-- Отзывы добавляются сюда -->
+            </div>
+        </section>
+
+  <!-- Вопросы и ответы -->
+  <section id="faq" class="page">
+    <h2>Вопросы и ответы</h2>
+    <div class="faq-item">
+        <h3>Про еду</h3>
+        <p class="faq-answer">Питание самостоятельно. На территории и поблизости нет ресторана, магазина.</p>
+    </div>
+    <div class="faq-item">
+        <h3>Что с интернетом?</h3>
+        <p class="faq-answer">📵 Сотовая связь от А1 работает, а Wi-Fi бывает нестабильным.</p>
+    </div>
+</section>
+
+        <!-- Карта -->
+    <section id="map" class="page">
+        <h2>Карта</h2>
+        <div id="google-map"></div>
+    </section>
+
+        <!-- Контакты -->
+        <section id="contacts" class="page">
+            <h2>Контакты</h2>
+            <p>Телефон: +375 (29) 123-45-67</p>
+            <p>Email: info@yetihome.by</p>
+        </section>
+    </div>
+</body>
+</html>     
